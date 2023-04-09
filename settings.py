@@ -100,6 +100,9 @@ def getSetting(name,section):
 		for (each_key, each_val) in cpass.items(each_section):
 			if each_section == section and each_key == name:
 				value = each_val
+	if name == 'log' and value == 'False':
+		value = translations['disabilitato_first_cap']
+		
 	return value
 
 
