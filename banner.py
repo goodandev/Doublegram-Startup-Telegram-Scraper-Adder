@@ -95,8 +95,8 @@ def banner(is_update=False,last_version=False,notice=False,start=False):
 		os.system("clear")
 
 	print(colors.gr+"------------------------")
-	print(colors.gr+"|"+colors.wy+colors.wm+" -------------------- "+colors.wreset+colors.gr+"|")
-	print(colors.gr+"|"+colors.wm+colors.wy+" | DOUBLEGRAM V1.2  | "+colors.wreset+colors.gr+"|")
-	print(colors.gr+"|"+colors.wm+colors.wy+" | STARTUP EDITION  | "+colors.wreset+colors.gr+"|")
-	print(colors.gr+"|"+colors.wy+colors.wm+" -------------------- "+colors.wreset+colors.gr+"|")
+	print(colors.gr+"|"+colors.wy+colors.wm+" --------------------- "+colors.wreset+colors.gr+"|")
+	print(colors.gr+"|"+colors.wm+colors.wy+" |  DOUBLEGRAM V1.2  | "+colors.wreset+colors.gr+"|")
+	print(colors.gr+"|"+colors.wm+colors.wy+" |  STARTUP EDITION  | "+colors.wreset+colors.gr+"|")
+	print(colors.gr+"|"+colors.wy+colors.wm+" --------------------- "+colors.wreset+colors.gr+"|")
 	print(colors.gr+"------------------------")
