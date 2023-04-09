@@ -66,7 +66,7 @@ def checkSettings(if_false_create):
 		if if_false_create == False:
 			return False
 		else:
-			log = False
+			log = translations['disabilitato_first_cap']
 			settings = configparser.RawConfigParser()
 			settings.add_section("general_settings")
 			settings.set("general_settings", "log", translations['disabilitato_first_cap'])
