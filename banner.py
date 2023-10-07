@@ -1,5 +1,6 @@
 import colors, time, requests, os, configparser
 from random import randint
+global translations
 
 translations = {}
 
@@ -41,14 +42,14 @@ except IOError:
 
 	lang = choise
 
-if lang == 'IT' or lang == 'EN':
-	with open('translations/'+lang+'.data', encoding="UTF-8") as f:
-		cpass = configparser.RawConfigParser()
-		cpass.read_file(f)
+with open('translations/'+lang+'.data', encoding="UTF-8") as f:
+	cpass = configparser.RawConfigParser()
+	cpass.read_file(f)
 
-		for each_section in cpass.sections():
-			for (each_key, each_val) in cpass.items(each_section):
-				translations[each_key] = each_val
+	for each_section in cpass.sections():
+		for (each_key, each_val) in cpass.items(each_section):
+			translations[each_key] = each_val
+
 
 colors.getColors()
 
