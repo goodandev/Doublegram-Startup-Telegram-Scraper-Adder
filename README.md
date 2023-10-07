@@ -26,6 +26,14 @@ Doublegram is compatible with Mac, Windows and Linux, you just need:
 ## What you get
 A regularly updated software (it even tell you when there is an update if you don't mess with start.py file), the definitive adding & scraping tool with tons of new features that elevate the standards of those software. Stop spending money on fake users, fake bots, or spend money in general when you can have it for free. Doublegram Startup respond to all the common needs when talking of scraping and adding users. 
 
+## Preview
+
+https://www.doublegram.me/img/adding.webm
+https://www.doublegram.me/img/scraping.gif
+https://www.doublegram.me/img/enabledisable.gif
+https://www.doublegram.me/img/options.gif
+
+
 ## Features
 
  - Scrape members from multiple groups and channels* and create a unique list of users ready to be added in the group or channel you need
