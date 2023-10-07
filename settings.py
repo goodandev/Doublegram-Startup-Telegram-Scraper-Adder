@@ -66,7 +66,7 @@ def checkSettings(if_false_create):
 		if if_false_create == False:
 			return False
 		else:
-			log = translations['disabilitato_first_cap']
+			log = False
 			settings = configparser.RawConfigParser()
 			settings.add_section("general_settings")
 			settings.set("general_settings", "log", translations['disabilitato_first_cap'])
@@ -100,9 +100,6 @@ def getSetting(name,section):
 		for (each_key, each_val) in cpass.items(each_section):
 			if each_section == section and each_key == name:
 				value = each_val
-	if name == 'log' and value == 'False':
-		value = translations['disabilitato_first_cap']
-		
 	return value
 
 
