@@ -7,7 +7,7 @@ Doublegram come in three editions, the Startup Edition is now free and open sour
 
 You can learn more on other editions of Doublegram on www.doublegram.me.
 
-Doublegram is compatible with Mac, Windows and Linux, you just need:
+Doublegram is compatible with Mac, Windows and Linux.
 
 
 
