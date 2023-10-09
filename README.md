@@ -24,7 +24,7 @@ Doublegram is compatible with Mac, Windows and Linux.
 - Run an adding task to add the users from the list to one of your group or channel
 
 ## What you get
-A regularly updated software (it even tell you when there is an update if you don't mess with start.py file), the definitive adding & scraping tool with tons of new features that elevate the standards of those software. Stop spending money on fake users, fake bots, or spend money in general when you can have it for free. Doublegram Startup respond to all the common needs when talking of scraping and adding users. 
+A regularly updated software (it even tell you when there is an update if you don't mess with start.py and banner.py files), the definitive adding & scraping tool with tons of new features that elevate the standards of those software. Stop spending money on fake users, fake bots, or spend money in general when you can have it for free. Doublegram Startup respond to all the common needs when talking of scraping and adding users. 
 
 ## Preview
 
