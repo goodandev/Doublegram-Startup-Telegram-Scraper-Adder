@@ -15,7 +15,7 @@ Doublegram is compatible with Mac, Windows and Linux.
 - Python >= 3.8
 - pip installed
 - run "**pip install telethon==1.26**"
-- To start Doublegram run this in the same folder of start.py file: "**python3 start.py**" (or "py start.py"/"python for windows users)
+- To start Doublegram run this in the same folder of start.py file: "**python3 start.py**" (or "py start.py" or "python start.py" for windows users)
 
 ## How it works
 - Use your Telegram accounts to scrape the list of the members of a group where members are visible or in all of your groups and channels and put them in a list with Doublegram. You can scrape from multiple places and create a unique list of members
