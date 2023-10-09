@@ -3,7 +3,7 @@
 
 Use your Telegram accounts to add users to your groups and channels in an automatic and personalized way. Run multiple tasks, even in background, even on a VPS.
 
-Doublegram come in three editions, the Startup Edition is now free and open source. This is the first public stable release of doublegram.
+Doublegram come in three editions, the Startup Edition is now free and open source. This is the first public stable release of Doublegram.
 
 You can learn more about the other editions on www.doublegram.me.
 
