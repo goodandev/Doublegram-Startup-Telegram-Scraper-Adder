@@ -10,6 +10,9 @@ You can learn more about the other editions on www.doublegram.me.
 Doublegram is compatible with Mac, Windows and Linux.
 
 
+A Documentation will be added soon, for now remember to add an account to Doublegram first (disable your 2fa before, you can enable it again after your account is connected to Doublegram), then scrape some members and then add them somewhere
+
+
 
 ## What you need:
 - Python >= 3.8
