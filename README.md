@@ -1,9 +1,13 @@
 
+![Logo](https://statics.doublegram.me/adding_startup.gif)
+
+
 # Doublegram Startup Edition - Definitive Telegram scraping & adding tool
+
 
 Use your Telegram accounts to add users to your groups and channels in an automatic and personalized way. Run multiple tasks, even in background, even on a VPS.
 
-OFFICIAL TELEGRAM GROUP: www.t.me/doublegram_official
+**OFFICIAL TELEGRAM GROUP: www.t.me/doublegram_official**
 
 Doublegram come in three editions, the Startup Edition is now free and open source. This is the first public stable release of Doublegram.
 
@@ -12,7 +16,7 @@ You can learn more about the other editions on www.doublegram.me.
 Doublegram is compatible with Mac, Windows and Linux.
 
 
-A Documentation will be added soon, for now remember to add an account to Doublegram first (disable your 2fa before, you can enable it again after your account is connected to Doublegram), then scrape some members and then add them somewhere
+**A Documentation will be added soon, for now remember to add an account to Doublegram first (disable your 2fa before, you can enable it again after your account is connected to Doublegram), then scrape some members and then add them somewhere**
 
 
 
