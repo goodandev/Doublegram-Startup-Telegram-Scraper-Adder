@@ -85,6 +85,8 @@ async def VoipAdderJob(client,users,selected_group,group_entity_complete,invite,
 			
 			breaker = False
 
+			last_added_n = 0 
+			
 			for user in users:
 				if user['last_added'] == 1:
 					last_added_n = last_added_n + 1

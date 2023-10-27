@@ -64,9 +64,9 @@ if lang == 'IT' or lang == 'EN':
 
 breaker = False 
 
-current_version = '1.2.0'
+current_version = '1.2.1'
 current_edition = 'STARTUP_EDITION'
-serial_id = 'EO9K2W3E9JRF76E5671DIEW2'
+serial_id = 'EO9K2W3E9JRF76E5671DIEW3'
 
 url = "https://dblgrm.me/version_verification.php?edition="+current_edition
 
