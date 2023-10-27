@@ -1,13 +1,22 @@
 
+![Logo](https://statics.doublegram.me/adding_startup.gif)
+
+
 # Doublegram Startup Edition - Definitive Telegram scraping & adding tool
 
-Use your Telegram accounts to add users to your groups and channels in an automatic and personalized way. Run multiple tasks, in background, even on a VPS.
 
-Doublegram come in three editions, the Startup Edition is now free and open source. This is the first public stable release of doublegram.
+Use your Telegram accounts to add users to your groups and channels in an automatic and personalized way. Run multiple tasks, even in background, even on a VPS.
 
-You can learn more on other editions of Doublegram on doublegram.me.
+**OFFICIAL TELEGRAM GROUP: www.t.me/doublegram_official**
 
-Doublegram is compatible with Mac, Windows and Linux, you just need:
+Doublegram come in three editions, the Startup Edition is now free and open source. This is the first public stable release of Doublegram.
+
+You can learn more about the other editions on www.doublegram.me.
+
+Doublegram is compatible with Mac, Windows and Linux.
+
+
+**A Documentation will be added soon, for now remember to add an account to Doublegram first (disable your 2fa before, you can enable it again after your account is connected to Doublegram), then scrape some members and then add them somewhere**
 
 
 
@@ -15,7 +24,7 @@ Doublegram is compatible with Mac, Windows and Linux, you just need:
 - Python >= 3.8
 - pip installed
 - run "**pip install telethon==1.26**"
-- To start Doublegram run this in the same folder of start.py file: "**python3 start.py**" (or "py start.py"/"python for windows users)
+- To start Doublegram run this in the same folder of start.py file: "**python3 start.py**" (or "py start.py" or "python start.py" for windows users)
 
 ## How it works
 - Use your Telegram accounts to scrape the list of the members of a group where members are visible or in all of your groups and channels and put them in a list with Doublegram. You can scrape from multiple places and create a unique list of members
@@ -23,8 +32,16 @@ Doublegram is compatible with Mac, Windows and Linux, you just need:
 - Now select the filter and the regulation of the adding as your needs
 - Run an adding task to add the users from the list to one of your group or channel
 
-## Wat you get
-A regularly updated software (it even tell you when there is an update if you don't mess with start.py file), the definitive adding & scraping tool with tons of new features that elevate the standards of those software. Stop spending money on fake users, fake bots, or spend money in general when you can have it for free. Doublegram Startup respond to all the common needs when talking of scraping and adding users. 
+## What you get
+A regularly updated software (it even tell you when there is an update if you don't mess with start.py and banner.py files), the definitive adding & scraping tool with tons of new features that elevate the standards of those software. Stop spending money on fake users, fake bots, or spend money in general when you can have it for free. Doublegram Startup respond to all the common needs when talking of scraping and adding users. 
+
+## Preview
+
+https://www.doublegram.me/img/adding.webm 
+https://www.doublegram.me/img/scraping.gif 
+https://www.doublegram.me/img/enabledisable.gif 
+https://www.doublegram.me/img/options.gif 
+
 
 ## Features
 
