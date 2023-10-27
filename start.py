@@ -85,7 +85,14 @@ if last_version != current_version and last_version != 'no':
 else:
 	is_update = False
 
-notice = False
+url = "https://dblgrm.me/notice.php?ver="+current_version+'&edition='+current_edition
+resp = requests.get(url)
+notice = resp.text
+
+if notice == 'no':
+	notice = False
+
+
 
 cpass = configparser.RawConfigParser()
 
