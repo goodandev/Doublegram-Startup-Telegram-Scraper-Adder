@@ -8,6 +8,7 @@
 Use your Telegram accounts to add users to your groups and channels in an automatic and personalized way. Run multiple tasks, even in background, even on a VPS.
 
 **OFFICIAL TELEGRAM GROUP: www.t.me/doublegram_official**
+**OFFICIAL TELEGRAM SUPPORT: www.t.me/doublegram_owner**
 
 Doublegram come in three editions, the Startup Edition is now free and open source. This is the first public stable release of Doublegram.
 
