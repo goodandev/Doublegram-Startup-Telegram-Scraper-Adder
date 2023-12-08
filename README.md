@@ -11,7 +11,7 @@ Add thousands of users to your groups and channels using your Telegram accounts.
 
 **OFFICIAL TELEGRAM SUPPORT (English - Italiano): www.t.me/doublegram_owner**
 
-Doublegram come in three editions, the Startup Edition is now free and open source. This is the first public stable release of Doublegram.
+Doublegram is available in three editions, the Startup Edition is now free and open source. And this is the first public stable release of Doublegram!
 
 You can learn more about the other editions on www.doublegram.me. (Website will be offline until 13th December)
 
