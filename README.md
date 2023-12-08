@@ -20,7 +20,7 @@ You can learn more about the other editions on www.doublegram.me. (Website will 
 
 ## Compatibility:
 Doublegram is compatible with Mac, Windows and Linux.
-Someone tested it on Android phone too and it works, but it is not officially supported yet.
+Someone tested it on Android phone too and it works, but it is not officially supported until accurated tests.
 
 ## What you need:
 - Python >= 3.8
