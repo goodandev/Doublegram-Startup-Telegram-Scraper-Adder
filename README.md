@@ -1,5 +1,5 @@
 
-![Logo](https://i.postimg.cc/d0gSddbJ/adding-startup.gif)
+![Logo](https://freeimage.host/i/JIb3rp2)
 
 
 # Doublegram Startup Edition - Definitive Telegram scraping & adding tool
