@@ -5,7 +5,7 @@
 # Doublegram Startup Edition - Definitive Telegram scraping & adding tool
 
 
-Use your Telegram accounts to add users to your groups and channels in an automatic and personalized way. Run multiple tasks, even in background, even on a VPS.
+Add thousands of users to your groups and channels using your Telegram accounts. Doublegram let you do that easily and in an automatic and personalized way. 
 
 **OFFICIAL TELEGRAM GROUP (English - Italiano): www.t.me/doublegram_official**
 
