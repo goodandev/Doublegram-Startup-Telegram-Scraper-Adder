@@ -13,7 +13,7 @@ Use your Telegram accounts to add users to your groups and channels in an automa
 
 Doublegram come in three editions, the Startup Edition is now free and open source. This is the first public stable release of Doublegram.
 
-You can learn more about the other editions on www.doublegram.me.
+You can learn more about the other editions on www.doublegram.me. (Website will be offline until 13th December)
 
 Doublegram is compatible with Mac, Windows and Linux.
 
