@@ -18,6 +18,9 @@ You can learn more about the other editions on www.doublegram.me. (Website will 
 
 **A Documentation will be added soon, for now remember to add an account to Doublegram first (disable your 2fa before, you can enable it again after your account is connected to Doublegram), then scrape some members and then add them somewhere**
 
+## Update instructions:
+Just copy and replace all the folders from your current version of Doublegram into the folder of the new version
+
 ## Compatibility:
 Windows, MacOS, Linux.
 Not officially yet but it seems to work on Android! (You'll need a Python IDE).
