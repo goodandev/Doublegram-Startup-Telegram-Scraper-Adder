@@ -46,7 +46,7 @@ https://www.doublegram.me/img/options.gif
 
 
 ## Features
-
+ - 3 differents scraping methods (Standard, Recents users and by first letter method)
  - Scrape members from multiple groups and channels* and create a unique list of users ready to be added in the group or channel you need
  - View stats of scraped members like nums of bot, number of users without picture, number of users with visible phone number, so you can edit the list if you need to (it will be a CSV file)
  - 2 Methods of scraping in one, if the members of the target are visible you can scrape it for sure.
