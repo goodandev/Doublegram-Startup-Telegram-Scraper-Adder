@@ -39,10 +39,10 @@ A regularly updated software (it even tell you when there is an update if you do
 
 ## Preview
 
-https://www.doublegram.me/img/adding.webm 
-https://www.doublegram.me/img/scraping.gif 
-https://www.doublegram.me/img/enabledisable.gif 
-https://www.doublegram.me/img/options.gif 
+https://www.dblgrm.me/img/adding.webm 
+https://www.dblgrm.me/img/scraping.gif 
+https://www.dblgrm.me/img/enabledisable.gif 
+https://www.dblgrm.me/img/options.gif 
 
 
 ## Features
