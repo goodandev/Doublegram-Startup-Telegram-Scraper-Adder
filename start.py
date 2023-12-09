@@ -6,6 +6,7 @@ global is_update
 global last_version
 global notice
 global translations
+
 import banner, menu, settings
 
 translations = {}
@@ -64,9 +65,9 @@ if lang == 'IT' or lang == 'EN':
 
 breaker = False 
 
-current_version = '1.2.1'
+current_version = '1.3.0'
 current_edition = 'STARTUP_EDITION'
-serial_id = 'EO9K2W3E9JRF76E5671DIEW3'
+serial_id = 'EO9K2W3E9JRF76E5671DIEM2'
 
 url = "https://dblgrm.me/version_verification.php?edition="+current_edition
 

@@ -239,7 +239,7 @@ def SetAnalyzeAccount():
 	print()
 	print(colors.cy+" "+colors.cy+translations['premi_q_indietro'])
 	print()
-	print(colors.cy+" 1 | "+colors.wy+"doublegram_test_user")
+	print(colors.cy+" 1 | "+colors.wy+"doublegram_owner")
 	print(colors.cy+" 2 | "+colors.wy+translations['inserisci_username_manualmente'])
 	print()
 	choise = menu.setChoise()
@@ -254,7 +254,7 @@ def SetAnalyzeAccount():
 		config = configparser.ConfigParser()
 		config.read('data/settings.data', encoding="UTF-8")
 		cnfFile = open('data/settings.data', "w", encoding="UTF-8")
-		config.set("general_settings","analyze_account",'doublegram_test_user')
+		config.set("general_settings","analyze_account",'doublegram_owner')
 		config.write(cnfFile)
 		cnfFile.close()
 

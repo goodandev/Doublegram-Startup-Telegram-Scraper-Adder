@@ -61,6 +61,10 @@ if lang == 'IT' or lang == 'EN':
 colors.getColors()
 log = settings.getSetting('log','general_settings')
 
+if log != translations['disabilitato_first_cap'] and log != translations['abilitato_first_cap']:
+	log = translations['disabilitato_first_cap']
+
+
 breaker_analysis = 0
 analysis_running = 0
 
@@ -635,12 +639,14 @@ def AccountSelector(mode):
 		print(colors.wm+colors.wy+" "+translations['preleva_e_aggiungi_cap']+" "+colors.wreset)
 		print()
 		print(colors.gr+" "+translations['seleziona_account_prelevare'])
-		print(colors.cy+translations['seleziona_account_prelevare_line'])
-	elif mode == 'members-r':
-		print(colors.wm+colors.wy+" "+translations['preleva_e_sovrascrivi_cap']+" "+colors.wreset)
+		print(colors.cy+" "+translations['seleziona_account_prelevare_line'])
 		print()
+	elif mode == 'members-r':
+		#print(colors.wm+colors.wy+" "+translations['preleva_e_sovrascrivi_cap']+" "+colors.wreset)
+		#print()
 		print(colors.gr+" "+translations['seleziona_account_prelevare'])
 		print(colors.cy+" "+translations['seleziona_account_prelevare_line'])
+		print()
 	elif mode == 'editvoip':
 		print(colors.wm+colors.wy+" "+translations['abilita_disabilita_cap']+" "+colors.wreset)
 		print()

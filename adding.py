@@ -62,6 +62,10 @@ if lang == 'IT' or lang == 'EN':
 				translations[each_key] = each_val
 
 
+if log != translations['disabilitato_first_cap'] and log != translations['abilitato_first_cap']:
+	log = translations['disabilitato_first_cap']
+
+
 def AddUsers(voip_index):
 
 	cpass = configparser.RawConfigParser()

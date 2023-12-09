@@ -7,6 +7,7 @@ colors.getColors()
 
 log = settings.getSetting('log','general_settings')
 
+
 translations = {}
 
 try:
@@ -56,7 +57,9 @@ if lang == 'IT' or lang == 'EN':
 			for (each_key, each_val) in cpass.items(each_section):
 				translations[each_key] = each_val
 
-
+if log != translations['disabilitato_first_cap'] and log != translations['abilitato_first_cap']:
+	log = translations['disabilitato_first_cap']
+	
 def setChoise():
 	print(colors.cy+" "+translations['set_choise_line'])
 	choise = input(colors.cy+" "+translations['set_choise_txt']+colors.gr)
@@ -119,7 +122,7 @@ def PrincipalMenu(show_menu=True):
 				if log == translations['disabilitato_first_cap']:
 					os.system('clear')
 					banner.banner()
-				PrincipalMenu();
+				PrincipalMenu()
 
 	except IOError:
 		PrincipalMenu()
@@ -251,7 +254,7 @@ def MembersMenu():
 				if log == translations['disabilitato_first_cap']:
 					os.system('clear')
 					banner.banner()
-				RewriteMembers()
+				SelectScrapingMethod('OVERWRITE')
 
 			elif choise == 3:
 				if log == translations['disabilitato_first_cap']:
@@ -263,7 +266,7 @@ def MembersMenu():
 				if log == translations['disabilitato_first_cap']:
 					os.system('clear')
 					banner.banner()
-				AddMembers()
+				SelectScrapingMethod('ADD TO')
 
 			else:
 				if log == translations['disabilitato_first_cap']:
@@ -276,6 +279,89 @@ def MembersMenu():
 			os.system('clear')
 			banner.banner()
 		MembersMenu()
+
+
+def SelectScrapingMethod(mode): 
+
+	print()
+	print(colors.wm+colors.wy+" "+translations['preleva_e_sovrascrivi_cap']+" "+colors.wreset)
+	
+	print()
+
+	print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+mode+colors.wreset)
+	print()
+	print(colors.gr+" "+translations['metodo_scraping'])
+	print(colors.cy+" "+translations['metodo_scraping_line'])
+	print()
+	print(colors.cy+" "+colors.cy+translations['premi_q_indietro'])
+	print()
+	print(colors.cy+" 1 | "+colors.wy+translations['metodo_1'])
+	print(colors.cy+" 2 | "+colors.wy+translations['metodo_2'])
+	print(colors.cy+" 3 | "+colors.wy+translations['metodo_3'])
+	print()
+	choise = setChoise()
+
+	if choise == 'q' or choise == 'Q':
+		if log == translations['disabilitato_first_cap']:
+			os.system('clear')
+			banner.banner()
+		MembersMenu()
+
+	try:
+		choise = int(choise)
+	except:
+		if log == translations['disabilitato_first_cap']:
+			os.system('clear')
+			banner.banner()
+		SelectScrapingMethod(mode)
+
+	
+	if choise == 1:
+		if log == translations['disabilitato_first_cap']:
+			os.system('clear')
+			banner.banner()
+		if mode == 'OVERWRITE':
+			RewriteMembers('method_1')
+		else:
+			if log == translations['disabilitato_first_cap']:
+				os.system('clear')
+				banner.banner()
+			AddMembers('method_1')
+
+	elif choise == 2:
+		if log == translations['disabilitato_first_cap']:
+			os.system('clear')
+			banner.banner()
+		if mode == 'OVERWRITE':
+			RewriteMembers('method_2')
+		else:
+			if log == translations['disabilitato_first_cap']:
+				os.system('clear')
+				banner.banner()
+			AddMembers('method_2')
+
+	elif choise == 3:
+		if log == translations['disabilitato_first_cap']:
+			os.system('clear')
+			banner.banner()
+		if mode == 'OVERWRITE':
+			RewriteMembers('method_3')
+		else:
+			if log == translations['disabilitato_first_cap']:
+				os.system('clear')
+				banner.banner()
+			AddMembers('method_3')
+
+	else:
+		if log == translations['disabilitato_first_cap']:
+			os.system('clear')
+			banner.banner()
+		SelectScrapingMethod(mode)
+
+	if log == translations['disabilitato_first_cap']:
+		os.system('clear')
+		banner.banner()
+	
 
 
 def AddingMenu():

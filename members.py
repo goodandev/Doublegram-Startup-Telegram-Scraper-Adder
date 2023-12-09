@@ -1,4 +1,4 @@
-import os, sys, csv, time, configparser, traceback, colors, menu, asyncio, settings, banner
+import os, sys, csv, string, time, configparser, traceback, colors, menu, asyncio, settings, banner
 from voip import AccountSelector, GroupChannelSelector, test_connection, getVoips, activeAnalysis, blockAnalysis
 from telethon.tl.types import ChannelParticipantsAdmins
 from telethon import functions, types
@@ -57,18 +57,30 @@ if lang == 'IT' or lang == 'EN':
 
 log = settings.getSetting('log','general_settings')
 
+if log != translations['disabilitato_first_cap'] and log != translations['abilitato_first_cap']:
+	log = translations['disabilitato_first_cap']
 
-def AddMembers():
+def AddMembers(scraping_method):
+	print()
+	print(colors.wm+colors.wy+" "+translations['preleva_e_sovrascrivi_cap']+" "+colors.wreset)
+	
+	print()
+
+	print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'ADD TO'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+
 	cpass = configparser.RawConfigParser()
 	cpass.read('data/config.data', encoding="UTF-8")
 
-	voip_index = AccountSelector(mode='members')
-	
+	try:
+		voip_index = AccountSelector(mode='members')
+	except e:
+		menu.SelectScrapingMethod('ADD TO')
+
 	if voip_index == 'q' or voip_index == 'Q':
 		if log == translations['disabilitato_first_cap']:
 			os.system("clear")
 			banner.banner()
-		menu.MembersMenu()
+		menu.SelectScrapingMethod('ADD TO')
 	else:
 		try:
 			voip_index_mem = int(voip_index)
@@ -76,120 +88,69 @@ def AddMembers():
 			if log == translations['disabilitato_first_cap']:
 				os.system("clear")
 				banner.banner()
-			AddMembers()
+			AddMembers(scraping_method)
 
 		if log == translations['disabilitato_first_cap']:
 			os.system("clear")
 			banner.banner()
-
+		
 		voips = getVoips()
 		length = len(voips)
-	
+		
 		if voip_index_mem < 1 or voip_index_mem > length:
 			if log == translations['disabilitato_first_cap']:
 				os.system('clear')
 				banner.banner()
 			print(colors.re+" "+translations['scelta_non_valida'])
-			AddMembers()
-		
+			AddMembers(scraping_method)
+
+
 		voip_index_name = int(voip_index)-1
 		voip_name = cpass['credenziali'+str(voip_index_name)]['name']
+		
 		print()
 		print(colors.wm+colors.wy+" "+translations['preleva_e_aggiungi_cap']+" "+colors.wreset)
-		print(colors.wm+colors.wy+" "+translations['account_utilizzato_cap']+" "+voip_name+colors.wreset)
+
 		print()
+
+		print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'ADD TO'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+		print()
+
 		print(colors.gr+" "+translations['seleziona_da_cui_prelevare_cap'])
-		print(" "+colors.cy+translations['seleziona_da_cui_prelevare_line'])
-		
-		selected_group = GroupChannelSelector(voip_index)
-		
-		if selected_group == 'q' or selected_group == 'Q':
-			if log == translations['disabilitato_first_cap']:
-				os.system("clear")
-				banner.banner()
-			menu.MembersMenu()
-		elif selected_group == False:
-			print()
-			print(colors.re+" "+translations['impossibile_questo_account'])
-			choise = input(colors.cy+" "+translations['invio_continuare']+" "+colors.gr)
-
-			if log == translations['disabilitato_first_cap']:
-				os.system("clear")
-				banner.banner()
-			AddMembers()
-		else:	
-			if log == translations['disabilitato_first_cap']:
-				os.system("clear")
-				banner.banner()
-			scrape_result = ScrapeMethodSelector(voip_index, selected_group, voip_name, mode='Add')
-
-
-def RewriteMembers():
-	cpass = configparser.RawConfigParser()
-	cpass.read('data/config.data', encoding="UTF-8")
-	
-	voip_index = AccountSelector(mode='members-r')
-	
-	if voip_index == 'q' or voip_index == 'Q':
-		if log == translations['disabilitato_first_cap']:
-			os.system("clear")
-			banner.banner()
-		menu.MembersMenu()
-	else:
-		try:
-			voip_index_mem = int(voip_index)
-		except:
-			if log == translations['disabilitato_first_cap']:
-				os.system("clear")
-				banner.banner()
-			RewriteMembers()
-
-		if log == translations['disabilitato_first_cap']:
-			os.system("clear")
-			banner.banner()
-		
-		voips = getVoips()
-		length = len(voips)
-		
-		if voip_index_mem < 1 or voip_index_mem > length:
-			if log == translations['disabilitato_first_cap']:
-				os.system('clear')
-				banner.banner()
-			print(colors.re+" "+translations['scelta_non_valida'])
-			RewriteMembers()
-
-
-		voip_index_name = int(voip_index)-1
-		voip_name = cpass['credenziali'+str(voip_index_name)]['name']
-		
-		print()
-		print(colors.wm+colors.wy+" "+translations['preleva_e_sovrascrivi_cap']+" "+colors.wreset)
-		print(colors.wm+colors.wy+" "+translations['account_utilizzato_cap']+" "+voip_name+colors.wreset)
-		print()
-		print(colors.gr+" "+translations['seleziona_da_cui_prelevare_cap'])
-		print(colors.cy+translations['seleziona_da_cui_prelevare_line'])
+		print(colors.cy+" "+translations['seleziona_da_cui_prelevare_line'])
 		
 		selected_group = GroupChannelSelector(voip_index)
 		if selected_group == 'q' or selected_group == 'Q':
 			if log == translations['disabilitato_first_cap']:
 				os.system("clear")
 				banner.banner()
-			menu.MembersMenu()
+			menu.AddMembers(scraping_method)
 		elif selected_group == False:
 			print()
-			print(colors.re+" "+translations['impossibile_questo_account'])
+			print(colors.re+" "+translations['impossibile_questo_dest'])
 			choise = input(colors.cy+" "+translations['invio_continuare']+" "+colors.gr)
 
 			if log == translations['disabilitato_first_cap']:
 				os.system("clear")
 				banner.banner()
-			RewriteMembers()
+			AddMembers(scraping_method)
 		else:
 			try:
 				if log == translations['disabilitato_first_cap']:
 					os.system("clear")
 					banner.banner()
-				scrape_result = ScrapeMethodSelector(voip_index, selected_group, voip_name, mode='Rewrite')
+				
+				print()
+				print(colors.wm+colors.wy+" "+translations['preleva_e_aggiungi_cap']+" "+colors.wreset)
+
+				print()
+
+				print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'ADD TO'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+				print()
+
+				print(colors.gr+" "+translations['voip_selezionato']+": "+colors.wm+colors.wy+voip_name+colors.wreset+colors.gr+" "+translations['target']+": "+colors.wm+colors.wy+selected_group.title+colors.wreset)
+				print()
+				scrape_result = ScrapeMethodSelector(voip_index, selected_group, voip_name, scraping_method, mode='Add')
 			except Exception as e:
 				print()
 				print(colors.re+" "+translations['impossibile_scaricare_da_destinazione'])
@@ -198,7 +159,114 @@ def RewriteMembers():
 				if log == translations['disabilitato_first_cap']:
 					os.system("clear")
 					banner.banner()
-				RewriteMembers()
+				AddMembers(scraping_method)
+			
+		if log == translations['disabilitato_first_cap']:
+			os.system("clear")
+			banner.banner()
+		menu.MembersMenu()
+
+def RewriteMembers(scraping_method):
+	print()
+	print(colors.wm+colors.wy+" "+translations['preleva_e_sovrascrivi_cap']+" "+colors.wreset)
+	
+	print()
+
+	print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'OVERWRITE'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+
+	
+	cpass = configparser.RawConfigParser()
+	cpass.read('data/config.data', encoding="UTF-8")
+	
+	try:
+		voip_index = AccountSelector(mode='members-r')
+	except e:
+		menu.SelectScrapingMethod('OVERWRITE')
+
+	if voip_index == 'q' or voip_index == 'Q':
+		if log == translations['disabilitato_first_cap']:
+			os.system("clear")
+			banner.banner()
+		menu.SelectScrapingMethod('OVERWRITE')
+	else:
+		try:
+			voip_index_mem = int(voip_index)
+		except:
+			if log == translations['disabilitato_first_cap']:
+				os.system("clear")
+				banner.banner()
+			RewriteMembers(scraping_method)
+
+		if log == translations['disabilitato_first_cap']:
+			os.system("clear")
+			banner.banner()
+		
+		voips = getVoips()
+		length = len(voips)
+		
+		if voip_index_mem < 1 or voip_index_mem > length:
+			if log == translations['disabilitato_first_cap']:
+				os.system('clear')
+				banner.banner()
+			print(colors.re+" "+translations['scelta_non_valida'])
+			RewriteMembers(scraping_method)
+
+
+		voip_index_name = int(voip_index)-1
+		voip_name = cpass['credenziali'+str(voip_index_name)]['name']
+		
+		print()
+		print(colors.wm+colors.wy+" "+translations['preleva_e_sovrascrivi_cap']+" "+colors.wreset)
+
+		print()
+
+		print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'OVERWRITE'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+		print()
+
+		print(colors.gr+" "+translations['seleziona_da_cui_prelevare_cap'])
+		print(colors.cy+" "+translations['seleziona_da_cui_prelevare_line'])
+		
+		selected_group = GroupChannelSelector(voip_index)
+		if selected_group == 'q' or selected_group == 'Q':
+			if log == translations['disabilitato_first_cap']:
+				os.system("clear")
+				banner.banner()
+			menu.RewriteMembers(scraping_method)
+		elif selected_group == False:
+			print()
+			print(colors.re+" "+translations['impossibile_questo_dest'])
+			choise = input(colors.cy+" "+translations['invio_continuare']+" "+colors.gr)
+
+			if log == translations['disabilitato_first_cap']:
+				os.system("clear")
+				banner.banner()
+			RewriteMembers(scraping_method)
+		else:
+			try:
+				if log == translations['disabilitato_first_cap']:
+					os.system("clear")
+					banner.banner()
+				
+				print()
+				print(colors.wm+colors.wy+" "+translations['preleva_e_sovrascrivi_cap']+" "+colors.wreset)
+
+				print()
+
+				print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'OVERWRITE'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+				print()
+
+				print(colors.gr+" "+translations['voip_selezionato']+": "+colors.wm+colors.wy+voip_name+colors.wreset+colors.gr+" "+translations['target']+": "+colors.wm+colors.wy+selected_group.title+colors.wreset)
+				print()
+				scrape_result = ScrapeMethodSelector(voip_index, selected_group, voip_name, scraping_method, mode='Rewrite')
+			except Exception as e:
+				print()
+				print(colors.re+" "+translations['impossibile_scaricare_da_destinazione'])
+				choise = input(colors.cy+" "+translations['invio_continuare']+" "+colors.gr)
+
+				if log == translations['disabilitato_first_cap']:
+					os.system("clear")
+					banner.banner()
+				RewriteMembers(scraping_method)
 			
 		if log == translations['disabilitato_first_cap']:
 			os.system("clear")
@@ -241,7 +309,6 @@ def ScrapeMembers(voip_index, selected_group, mode, d, tot_recent_users, channel
 				all_admin = False
 
 			try:
-				print()
 				print(colors.gr+" "+translations['prelevo_membri'])
 				all_participants = client.get_participants(target_group_entity, aggressive=False)
 				client.disconnect()
@@ -325,9 +392,153 @@ def ScrapeMembers(voip_index, selected_group, mode, d, tot_recent_users, channel
 			added = False
 
 		return added
+	else:
+		return False
 
 
-def ScrapeMethodSelector(voip_index, selected_group, voip_name, mode):
+
+def ScrapeMembersByLetter(voip_index, selected_group, mode, d, tot_recent_users, channel_connect, client):
+	russian = ['ы', 'щ', 'к', 'с', 'м', 'э', 'и', 'я', 'х', 'а', 'ч', 'у', 'о', 'ж', 'в', 'д', 'ъ', 'ё', 'ь', 'ш', 'л', 'р', 'й', 'ю', 'б', 'ц', 'н', 'т', 'п', 'ф', 'е', 'з', 'г']
+	numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+	query = list(string.ascii_lowercase) + numbers
+	
+	if mode == 'Rewrite':
+		method = 'w'
+		list_already = False
+	elif mode == 'Add':
+		method = 'a'
+		list_already = []
+		with open(r"members/members.csv", encoding='UTF-8') as f:  
+			rows = csv.reader(f,delimiter=",",lineterminator="\n")
+			next(rows, None)
+			for row in rows:
+				list_already.append(str(row[1]))
+
+	cpass = configparser.RawConfigParser()
+	cpass.read('data/config.data', encoding="UTF-8")
+
+	voip_index = int(voip_index)-1
+
+	if client != False:
+		try:
+			target_group_entity = client.get_entity(InputPeerChannel(selected_group.id, selected_group.access_hash))
+			is_target = True
+		except Exception as e:
+			is_target = False
+		
+		if is_target == True:
+			try:
+				activeAnalysis()
+				all_admin = client.get_participants(target_group_entity, aggressive=False, filter=ChannelParticipantsAdmins)
+				blockAnalysis()
+			except:
+				all_admin = False
+
+			try:
+				print(colors.gr+" "+translations['prelevo_membri'])
+				all_participants = []
+				filtered_participants = []
+				for letter in query:
+					print(" [+] Fetching letter: "+str(letter), end="\r")
+
+					all_participants = all_participants + client.get_participants(target_group_entity, limit=None, search=letter)
+				client.disconnect()
+
+				for member_data in all_participants:
+					if member_data not in filtered_participants:
+						filtered_participants.append(member_data)
+				
+				all_participants = filtered_participants
+
+			except Exception as e:
+				print(e)
+				all_participants = False
+		else:
+			all_participants = False
+
+		if all_participants != False:
+
+			with open("members/members.csv",method,encoding='UTF-8') as f:
+				
+				print(colors.gr+" "+translations['salvo_membri_in_file'])
+				print(colors.gr+" "+translations['attendi'])
+				
+				writer = csv.writer(f,delimiter=",",lineterminator="\n")
+				if method == 'w':
+					writer.writerow(['username','user id', 'access hash', 'name', 'group', 'group id', 'is_bot', 'is_admin', 'dc_id', 'have_photo', 'phone', 'elaborated'])
+				
+				voips = getVoips()
+
+				for user in all_participants:
+					found_in_own = False
+					found_in_already = False
+
+					for x in voips:
+						if x['id'] == str(user.id):
+							found_in_own = True
+
+					if mode == 'Add':
+						for x in list_already:
+							if x == str(user.id):
+								found_in_already = True
+
+					if found_in_own == False and found_in_already == False:
+						if user.username:
+							username = user.username
+						else:
+							username = ""
+						if user.first_name:
+							first_name = user.first_name
+						else:
+							first_name = ""
+						if user.last_name:
+							last_name = user.last_name
+						else:
+							last_name = ""
+						name = (first_name + ' ' + last_name).strip()
+
+						if user.photo:
+							try:
+								dc_id = user.photo.dc_id
+								have_photo = True
+							except:
+								dc_id = False
+								have_photo = False
+						else:
+							dc_id = False
+							have_photo = False
+
+						if user.bot != False:
+							is_bot = True
+						else:
+							is_bot = False
+
+						if user.phone != None:
+							phone = user.phone
+						else:
+							phone = False
+
+						is_admin = False
+
+						if all_admin != False:
+							for admin in all_admin:
+								if admin.id == user.id:
+									is_admin = True
+
+						writer.writerow([username,user.id,user.access_hash,name,selected_group.title,selected_group.id,is_bot,is_admin,dc_id,have_photo,phone,0])      
+			added = True
+		else:
+			added = False
+
+		return added
+	
+	else:
+		return False
+
+
+
+
+def ScrapeMethodSelector(voip_index, selected_group, voip_name, scraping_method, mode):
 
 	if mode == 'Rewrite':
 		method = 'w'
@@ -375,15 +586,13 @@ def ScrapeMethodSelector(voip_index, selected_group, voip_name, mode):
 
 		d = tot_recent_users/200
 
-		print()
-		print(colors.wm+colors.wy+" "+translations['preleva_e_sovrascrivi_cap']+" "+colors.wreset)
-		print(colors.wm+colors.wy+" "+translations['account_utilizzato_cap']+" "+voip_name+colors.wreset)
-
-		result = ScrapeMembers(voip_index, selected_group, mode, d, tot_recent_users, channel_connect, client)
-
-		if result != True:
-
-			print()
+		added = False
+		
+		if scraping_method == 'method_1':
+			result = ScrapeMembers(voip_index, selected_group, mode, d, tot_recent_users, channel_connect, client)
+			added = result
+			
+		elif scraping_method == 'method_2':
 			try:
 				activeAnalysis()
 				total_recent_request_call = client(functions.channels.GetParticipantsRequest(
@@ -952,8 +1161,12 @@ def ScrapeMethodSelector(voip_index, selected_group, voip_name, mode):
 			except Exception as e:
 				added = False
 
+		elif scraping_method == 'method_3':
+			result = ScrapeMembersByLetter(voip_index, selected_group, mode, d, tot_recent_users, channel_connect, client)
+			added = result
+		
 		else:
-			added = True
+			added = False
 
 		if added == True:
 			print(colors.gr+" "+translations['lista_salvata'])
@@ -968,6 +1181,4 @@ def ScrapeMethodSelector(voip_index, selected_group, voip_name, mode):
 			os.system("clear")
 			banner.banner()
 		menu.MembersMenu()
-
-
 	

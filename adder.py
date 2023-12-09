@@ -61,6 +61,9 @@ if lang == 'IT' or lang == 'EN':
 			for (each_key, each_val) in cpass.items(each_section):
 				translations[each_key] = each_val
 
+if log != translations['disabilitato_first_cap'] and log != translations['abilitato_first_cap']:
+	log = translations['disabilitato_first_cap']
+
 
 async def VoipAdderJob(client,users,selected_group,group_entity_complete,invite,phone,change_account_n_requests,stop_max_adding,casual_pause_times,between_adding_pause,start_point_members_file,add_using,account_name):
 	try:
