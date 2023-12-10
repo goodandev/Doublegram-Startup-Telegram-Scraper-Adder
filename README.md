@@ -75,4 +75,6 @@ https://www.dblgrm.me/img/options.gif
 You can use screen: $ **screen -s Session_Doublegram**
 then start as said above. After that you can close the terminal when you want and it will continue running. To reopen: $ **screen -ls** to list the active sessions, then $ **screen -r 12345** (change "12345" with the number of your session)
 
+## Installation
+[![Doublegram Installation](https://img.youtube.com/vi/IyE0le_DJTg/0.jpg)](https://www.youtube.com/watch?v=IyE0le_DJTg)
 
