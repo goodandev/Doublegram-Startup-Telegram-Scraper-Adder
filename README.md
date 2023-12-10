@@ -1,8 +1,8 @@
+# Doublegram Startup Edition - Definitive Telegram scraping & adding tool
 
 ![Logo](https://iili.io/JIb3rp2.gif)
 
 
-# Doublegram Startup Edition - Definitive Telegram scraping & adding tool
 
 
 Add thousands of users to your groups and channels using your Telegram accounts. Doublegram let you do that easily and in an automatic and personalized way. 
@@ -13,10 +13,13 @@ Add thousands of users to your groups and channels using your Telegram accounts.
 
 Doublegram is available in three editions, the Startup Edition is now free and open source. And this is the first public stable release of Doublegram!
 
-You can learn more about the other editions on www.doublegram.me. (Website will be offline until 13th December)
+You can learn more about the other editions on www.doublegram.me. (Website will be offline until 13th December, for now: www.dblgrm.me/home.php)
 
 
 **A Documentation will be added soon, for now remember to add an account to Doublegram first (disable your 2fa before, you can enable it again after your account is connected to Doublegram), then scrape some members and then add them somewhere**
+
+## Update instructions:
+Just copy and replace all the folders from your current version of Doublegram into the folder of the new version
 
 ## Compatibility:
 Windows, MacOS, Linux.
@@ -39,14 +42,14 @@ A regularly updated software (it even tell you when there is an update if you do
 
 ## Preview
 
-https://www.doublegram.me/img/adding.webm 
-https://www.doublegram.me/img/scraping.gif 
-https://www.doublegram.me/img/enabledisable.gif 
-https://www.doublegram.me/img/options.gif 
+https://www.dblgrm.me/img/adding.webm 
+https://www.dblgrm.me/img/scraping.gif 
+https://www.dblgrm.me/img/enabledisable.gif 
+https://www.dblgrm.me/img/options.gif 
 
 
 ## Features
-
+ - 3 differents scraping methods (Standard, Recents users and by first letter method)
  - Scrape members from multiple groups and channels* and create a unique list of users ready to be added in the group or channel you need
  - View stats of scraped members like nums of bot, number of users without picture, number of users with visible phone number, so you can edit the list if you need to (it will be a CSV file)
  - 2 Methods of scraping in one, if the members of the target are visible you can scrape it for sure.
