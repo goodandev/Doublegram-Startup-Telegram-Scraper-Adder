@@ -254,7 +254,7 @@ def MembersMenu():
 				if log == translations['disabilitato_first_cap']:
 					os.system('clear')
 					banner.banner()
-				SelectScrapingMethod('OVERWRITE')
+				SelectScrapingMethod(translations['opt_overwrite'])
 
 			elif choise == 3:
 				if log == translations['disabilitato_first_cap']:
@@ -266,7 +266,7 @@ def MembersMenu():
 				if log == translations['disabilitato_first_cap']:
 					os.system('clear')
 					banner.banner()
-				SelectScrapingMethod('ADD TO')
+				SelectScrapingMethod(translations['opt_add_to'])
 
 			else:
 				if log == translations['disabilitato_first_cap']:
@@ -320,7 +320,7 @@ def SelectScrapingMethod(mode):
 		if log == translations['disabilitato_first_cap']:
 			os.system('clear')
 			banner.banner()
-		if mode == 'OVERWRITE':
+		if mode == translations['opt_overwrite']:
 			RewriteMembers('method_1')
 		else:
 			if log == translations['disabilitato_first_cap']:
@@ -332,7 +332,7 @@ def SelectScrapingMethod(mode):
 		if log == translations['disabilitato_first_cap']:
 			os.system('clear')
 			banner.banner()
-		if mode == 'OVERWRITE':
+		if mode == translations['opt_overwrite']:
 			RewriteMembers('method_2')
 		else:
 			if log == translations['disabilitato_first_cap']:
@@ -344,7 +344,7 @@ def SelectScrapingMethod(mode):
 		if log == translations['disabilitato_first_cap']:
 			os.system('clear')
 			banner.banner()
-		if mode == 'OVERWRITE':
+		if mode == translations['opt_overwrite']:
 			RewriteMembers('method_3')
 		else:
 			if log == translations['disabilitato_first_cap']:

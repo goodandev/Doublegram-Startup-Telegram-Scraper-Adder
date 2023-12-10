@@ -66,7 +66,7 @@ def AddMembers(scraping_method):
 	
 	print()
 
-	print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'ADD TO'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+	print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+translations['opt_add_to']+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
 
 	cpass = configparser.RawConfigParser()
 	cpass.read('data/config.data', encoding="UTF-8")
@@ -74,13 +74,13 @@ def AddMembers(scraping_method):
 	try:
 		voip_index = AccountSelector(mode='members')
 	except e:
-		menu.SelectScrapingMethod('ADD TO')
+		menu.SelectScrapingMethod(translations['opt_add_to'])
 
 	if voip_index == 'q' or voip_index == 'Q':
 		if log == translations['disabilitato_first_cap']:
 			os.system("clear")
 			banner.banner()
-		menu.SelectScrapingMethod('ADD TO')
+		menu.SelectScrapingMethod(translations['opt_add_to'])
 	else:
 		try:
 			voip_index_mem = int(voip_index)
@@ -113,7 +113,7 @@ def AddMembers(scraping_method):
 
 		print()
 
-		print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'ADD TO'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+		print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+translations['opt_add_to']+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
 		print()
 
 		print(colors.gr+" "+translations['seleziona_da_cui_prelevare_cap'])
@@ -145,7 +145,7 @@ def AddMembers(scraping_method):
 
 				print()
 
-				print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'ADD TO'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+				print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+translations['opt_add_to']+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
 				print()
 
 				print(colors.gr+" "+translations['voip_selezionato']+": "+colors.wm+colors.wy+voip_name+colors.wreset+colors.gr+" "+translations['target']+": "+colors.wm+colors.wy+selected_group.title+colors.wreset)
@@ -172,7 +172,7 @@ def RewriteMembers(scraping_method):
 	
 	print()
 
-	print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'OVERWRITE'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+	print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+translations['opt_overwrite']+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
 
 	
 	cpass = configparser.RawConfigParser()
@@ -181,13 +181,13 @@ def RewriteMembers(scraping_method):
 	try:
 		voip_index = AccountSelector(mode='members-r')
 	except e:
-		menu.SelectScrapingMethod('OVERWRITE')
+		menu.SelectScrapingMethod(translations['opt_overwrite'])
 
 	if voip_index == 'q' or voip_index == 'Q':
 		if log == translations['disabilitato_first_cap']:
 			os.system("clear")
 			banner.banner()
-		menu.SelectScrapingMethod('OVERWRITE')
+		menu.SelectScrapingMethod(translations['opt_overwrite'])
 	else:
 		try:
 			voip_index_mem = int(voip_index)
@@ -220,7 +220,7 @@ def RewriteMembers(scraping_method):
 
 		print()
 
-		print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'OVERWRITE'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+		print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+translations['opt_overwrite']+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
 		print()
 
 		print(colors.gr+" "+translations['seleziona_da_cui_prelevare_cap'])
@@ -252,7 +252,7 @@ def RewriteMembers(scraping_method):
 
 				print()
 
-				print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+'OVERWRITE'+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
+				print(colors.gr+" "+translations['saving_method']+": "+colors.wm+colors.wy+translations['opt_add_to']+colors.wreset+colors.gr+" "+translations['scraping_method']+": "+colors.wm+colors.wy+scraping_method+colors.wreset)
 				print()
 
 				print(colors.gr+" "+translations['voip_selezionato']+": "+colors.wm+colors.wy+voip_name+colors.wreset+colors.gr+" "+translations['target']+": "+colors.wm+colors.wy+selected_group.title+colors.wreset)
