@@ -67,7 +67,7 @@ breaker = False
 
 current_version = '1.3.0'
 current_edition = 'STARTUP_EDITION'
-serial_id = 'EO9K2W3E9JRF76E5671DIEM2'
+serial_id = 'EO9K2W3E9JRF76E5671DIEM3'
 
 url = "https://dblgrm.me/version_verification.php?edition="+current_edition
 
