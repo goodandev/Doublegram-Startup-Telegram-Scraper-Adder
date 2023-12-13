@@ -65,7 +65,7 @@ if lang == 'IT' or lang == 'EN':
 
 breaker = False 
 
-current_version = '1.3.0'
+current_version = '1.3.1'
 current_edition = 'STARTUP_EDITION'
 serial_id = 'EO9K2W3E9JRF76E5671DIEM3'
 
