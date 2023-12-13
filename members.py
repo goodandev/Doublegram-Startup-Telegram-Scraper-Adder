@@ -400,7 +400,7 @@ def ScrapeMembers(voip_index, selected_group, mode, d, tot_recent_users, channel
 def ScrapeMembersByLetter(voip_index, selected_group, mode, d, tot_recent_users, channel_connect, client):
 	russian = ['ы', 'щ', 'к', 'с', 'м', 'э', 'и', 'я', 'х', 'а', 'ч', 'у', 'о', 'ж', 'в', 'д', 'ъ', 'ё', 'ь', 'ш', 'л', 'р', 'й', 'ю', 'б', 'ц', 'н', 'т', 'п', 'ф', 'е', 'з', 'г']
 	numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
-	query = list(string.ascii_lowercase) + numbers
+	query = list(string.ascii_lowercase) + numbers + russian
 	
 	if mode == 'Rewrite':
 		method = 'w'
@@ -439,11 +439,14 @@ def ScrapeMembersByLetter(voip_index, selected_group, mode, d, tot_recent_users,
 				all_participants = []
 				filtered_participants = []
 				for letter in query:
-					print(" [+] Fetching letter: "+str(letter), end="\r")
-
+					print(" [+] "+translations['fetching_letter']+": "+str(letter), end="\r")
+					
+					#time.sleep(0.50)
 					all_participants = all_participants + client.get_participants(target_group_entity, limit=None, search=letter)
 				client.disconnect()
 
+				print()
+				print(" "+translations['saving_members'])
 				for member_data in all_participants:
 					if member_data not in filtered_participants:
 						filtered_participants.append(member_data)
@@ -1092,7 +1095,6 @@ def ScrapeMethodSelector(voip_index, selected_group, voip_name, scraping_method,
 				if all_participants != False:
 					with open("members/members.csv",method,encoding='UTF-8') as f:
 
-						print(colors.gr+" "+translations['salvo_membri_in_file'])
 						print(colors.gr+" "+translations['attendi'])
 
 						writer = csv.writer(f,delimiter=",",lineterminator="\n")
