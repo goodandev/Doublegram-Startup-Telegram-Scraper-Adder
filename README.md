@@ -13,7 +13,7 @@ Add thousands of users to your groups and channels using your Telegram accounts.
 
 Doublegram is available in three editions, the Startup Edition is now free and open source. And this is the first public stable release of Doublegram!
 
-You can learn more about the other editions on www.doublegram.me. (Website will be offline until 13th December, for now: www.dblgrm.me/home.php)
+You can learn more about the other editions on www.doublegram.me. (Website will be offline until 13th December, for now: www.dblgrm.me/features.php and www.dblgrm.me/editions.php)
 
 
 **A Documentation will be added soon, for now remember to add an account to Doublegram first (disable your 2fa before, you can enable it again after your account is connected to Doublegram), then scrape some members and then add them somewhere**
@@ -75,4 +75,6 @@ https://www.dblgrm.me/img/options.gif
 You can use screen: $ **screen -s Session_Doublegram**
 then start as said above. After that you can close the terminal when you want and it will continue running. To reopen: $ **screen -ls** to list the active sessions, then $ **screen -r 12345** (change "12345" with the number of your session)
 
+## Installation video
+[![Doublegram Installation](https://img.youtube.com/vi/IyE0le_DJTg/0.jpg)](https://www.youtube.com/watch?v=IyE0le_DJTg)
 
