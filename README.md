@@ -5,7 +5,9 @@ The professional adding, targeting and scraping tool for your groups and channel
 ![Logo](https://www.doublegram.com/img/github-dblgrm-social.png)
 
 
-DOUBLEGRAM STARTUP IS NOW AVAILABLE AS PAID SOFTWARE ON DOUBLEGRAM.COM
+DOUBLEGRAM STARTUP IS NOW AVAILABLE AS PAID SOFTWARE ON DOUBLEGRAM.COM 
+
+GET THE MOST POWERFUL ADDER/SCRAPER FOR $19.99, BUY ONCE, YOUR FOREVER
 
 ## New Documentation
 
