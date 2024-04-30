@@ -7,13 +7,15 @@ The professional adding, targeting and scraping tool for your groups and channel
 
 DOUBLEGRAM STARTUP IS NOW AVAILABLE AS PAID SOFTWARE ON DOUBLEGRAM.COM
 
+CHECK OUR TELEGRAM CHANNEL FOR PROMO AND UPDATES
 
-## New Documentation
+
+##### New Documentation
 
 https://doublegram.com/docs/doublegram
 
 
-## Features list
+##### Features list
 
 https://doublegram.com/features
 
