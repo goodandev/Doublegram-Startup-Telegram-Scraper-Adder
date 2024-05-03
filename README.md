@@ -5,12 +5,7 @@ The professional adding, targeting and scraping tool for your groups and channel
 ![Logo](https://www.doublegram.com/img/github-dblgrm-social.png)
 
 
-DOUBLEGRAM STARTUP IS NOW AVAILABLE AS PAID SOFTWARE ON DOUBLEGRAM.COM
-
-
-##### New Documentation
-
-https://doublegram.com/docs/doublegram
+DOUBLEGRAM STARTUP IS NOW AVAILABLE AS PAID SOFTWARE ON WWW.DOUBLEGRAM.COM
 
 
 ##### Features list
