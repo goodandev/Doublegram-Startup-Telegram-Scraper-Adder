@@ -8,7 +8,7 @@ The professional adding, targeting and scraping tool for your groups and channel
 DOUBLEGRAM STARTUP IS NOW AVAILABLE AS PAID SOFTWARE ON WWW.DOUBLEGRAM.COM
 
 
-##### Features list
+##### Features
 
 https://doublegram.com/features
 
