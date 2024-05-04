@@ -1,6 +1,6 @@
 
 
-The professional adding, targeting and scraping tool for your groups and channels on Telegram.
+A professional adding, targeting and scraping tool for your groups and channels on Telegram.
 
 ![Logo](https://www.doublegram.com/img/github-dblgrm-social.png)
 
