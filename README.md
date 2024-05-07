@@ -8,9 +8,6 @@ A professional adding, targeting and scraping tool for your groups and channels 
 
 DOUBLEGRAM STARTUP IS NOW AVAILABLE AS PAID SOFTWARE ON WWW.DOUBLEGRAM.COM
 
-50% DISCOUNT ONLY TODAY 6 MAY WITH THE CODE "SAWONX". USE IT ON YOUR CHECKOUT! Valid for both Doublegram Startup and Pro edition.
-
-
 
 ##### Features
 
