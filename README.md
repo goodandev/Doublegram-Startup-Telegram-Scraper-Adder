@@ -14,10 +14,6 @@ DOUBLEGRAM STARTUP IS NOW AVAILABLE AS PAID SOFTWARE ON WWW.DOUBLEGRAM.COM
 https://doublegram.com/features
 
 
-##### NEW OFFICIAL TELEGRAM GROUP
-[Doublegram Community](https://t.me/+DdO9_OA29442ODI0)
-
-
 ##### NEW OFFICIAL NEWS CHANNEL
 [Doublegram News](https://t.me/doublegram_news)
 
