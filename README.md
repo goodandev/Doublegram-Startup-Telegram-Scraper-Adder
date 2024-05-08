@@ -3,10 +3,11 @@
 
 ![Logo](https://www.doublegram.com/img/github-dblgrm-social.png)
 
-A professional adding, targeting and scraping tool for your groups and channels on Telegram.
-
 
 DOUBLEGRAM STARTUP IS NOW AVAILABLE AS PAID SOFTWARE ON WWW.DOUBLEGRAM.COM
+
+A professional adding, targeting and scraping tool for your groups and channels on Telegram.
+
 
 
 ##### Features
