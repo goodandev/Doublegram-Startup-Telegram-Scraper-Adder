@@ -1,6 +1,4 @@
 
-
-
 ![Logo](https://www.doublegram.com/img/github-dblgrm-social.png)
 
 
