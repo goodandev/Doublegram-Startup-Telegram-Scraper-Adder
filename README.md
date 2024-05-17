@@ -2,7 +2,11 @@
 ![Logo](https://www.doublegram.com/img/github-dblgrm-social.png)
 
 
-DOUBLEGRAM STARTUP IS NOW AVAILABLE AS PAID SOFTWARE ON WWW.DOUBLEGRAM.COM
+DOUBLEGRAM STARTUP IS NOT AVAILABLE AMYMORE.
+
+PRO EDITION TOOK HIS PLACE!
+
+More on doublegram.com
 
 A professional adding, targeting and scraping tool for your groups and channels on Telegram.
 
