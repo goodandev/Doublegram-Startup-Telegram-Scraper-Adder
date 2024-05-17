@@ -8,7 +8,6 @@ A professional adding, targeting and scraping tool for your groups and channels 
 
 
 ##### Features
-
 https://doublegram.com/features
 
 
