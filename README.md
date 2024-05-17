@@ -2,7 +2,7 @@
 ![Logo](https://www.doublegram.com/img/github-dblgrm-social.png)
 
 
-DOUBLEGRAM STARTUP IS NOT AVAILABLE AMYMORE.
+DOUBLEGRAM STARTUP IS NOT AVAILABLE ANYMORE.
 
 PRO EDITION TOOK HIS PLACE!
 
