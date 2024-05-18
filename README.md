@@ -10,7 +10,6 @@ More on doublegram.com
 
 A professional adding, targeting and scraping tool for your groups and channels on Telegram.
 
-
 ##### Features
 https://doublegram.com/features
 
