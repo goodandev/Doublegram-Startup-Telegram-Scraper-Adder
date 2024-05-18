@@ -1,13 +1,14 @@
 
 ![Logo](https://www.doublegram.com/img/github-dblgrm-social.png)
 
+A professional adding, targeting and scraping tool for your groups and channels on Telegram.
+
 
 DOUBLEGRAM STARTUP IS NOT AVAILABLE ANYMORE.
 PRO EDITION TOOK HIS PLACE!  TODAY 50% OFF WITH THE CODE "50FOR1", USE IT ON THE CHECKOUT PAGE!
 
 More on doublegram.com
 
-A professional adding, targeting and scraping tool for your groups and channels on Telegram.
 
 ##### Features
 https://doublegram.com/features
