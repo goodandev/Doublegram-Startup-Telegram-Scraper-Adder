@@ -5,7 +5,7 @@ A professional adding, targeting and scraping tool for your groups and channels 
 
 
 DOUBLEGRAM STARTUP IS NOT AVAILABLE ANYMORE.
-PRO EDITION TOOK HIS PLACE!  TODAY 50% OFF WITH THE CODE "50FOR1", USE IT ON THE CHECKOUT PAGE!
+PRO EDITION TOOK HIS PLACE!
 
 More on doublegram.com
 
