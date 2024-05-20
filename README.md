@@ -9,7 +9,6 @@ PRO EDITION TOOK HIS PLACE!  TODAY 50% OFF WITH THE CODE "50FOR1", USE IT ON THE
 
 More on doublegram.com
 
-
 ##### Features
 https://doublegram.com/features
 
