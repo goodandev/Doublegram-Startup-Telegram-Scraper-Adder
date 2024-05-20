@@ -6,7 +6,7 @@ A professional bulk invite - adding, targeting and scraping tool for your groups
 DOUBLEGRAM STARTUP IS NOT AVAILABLE ANYMORE.
 PRO EDITION TOOK HIS PLACE!
 
-More on doublegram.com
+More on www.doublegram.com
 
 ##### Features
 https://doublegram.com/features
