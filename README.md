@@ -3,9 +3,7 @@
 
 The professional bulk invite - adding, targeting and scraping tool for your groups and channels on Telegram.
 
-DOUBLEGRAM STARTUP IS NOT AVAILABLE ANYMORE.
-PRO EDITION TOOK HIS PLACE! TODAY 30% OFF!
-
+DOUBLEGRAM PRO TOOK THE PLACE OF DOUBLEGRAM STARTUP!
 More info on www.doublegram.com
 
 ##### Features
