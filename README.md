@@ -1,5 +1,5 @@
 
-![Logo](https://www.doublegram.com/img/github-dblgrm-social.png)
+![Logo](https://www.doublegram.com/img/dblgrm-bulk-invite.png)
 
 The professional bulk invite - adding, targeting and scraping tool for your groups and channels on Telegram.
 
