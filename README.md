@@ -1,7 +1,7 @@
 
 ![Logo](https://www.doublegram.com/img/dblgrm-bulk-invite.png)
 
-The professional bulk invite and scraping tool for your groups and channels on Telegram.
+A professional bulk invite and scraping tool for your groups and channels on Telegram.
 
 DOUBLEGRAM PRO TOOK THE PLACE OF DOUBLEGRAM STARTUP - More info on www.doublegram.com
 
