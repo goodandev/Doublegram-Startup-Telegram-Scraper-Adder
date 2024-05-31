@@ -13,4 +13,3 @@ https://youtu.be/2LR8yLkoeTI?si=L7ykXcfSEH6XYOO9
 
 ##### Join our Telegram community 
 https://t.me/+DdO9_OA29442ODI0
-
