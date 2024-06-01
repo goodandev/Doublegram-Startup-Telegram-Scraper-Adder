@@ -10,6 +10,3 @@ https://youtu.be/2LR8yLkoeTI?si=L7ykXcfSEH6XYOO9
 
 ##### NEW OFFICIAL NEWS CHANNEL
 [Doublegram News](https://t.me/doublegram_news)
-
-##### Join our Telegram community 
-https://t.me/+DdO9_OA29442ODI0
