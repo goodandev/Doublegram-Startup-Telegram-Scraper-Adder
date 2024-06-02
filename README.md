@@ -8,5 +8,5 @@ DOUBLEGRAM PRO TOOK THE PLACE OF DOUBLEGRAM STARTUP - More info on www.doublegra
 ##### Installation video
 https://youtu.be/2LR8yLkoeTI?si=L7ykXcfSEH6XYOO9
 
-##### NEW OFFICIAL NEWS CHANNEL
+##### OFFICIAL NEWS CHANNEL
 [Doublegram News](https://t.me/doublegram_news)
