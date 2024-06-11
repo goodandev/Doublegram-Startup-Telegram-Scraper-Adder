@@ -4,7 +4,7 @@ Bulk invite and scraping tool for your groups and channels on Telegram.
 
 More info on www.doublegram.com
 
-##### Installation video
+##### Installation video for android (Work on Windows, Macos, Linux too)
 https://youtu.be/2LR8yLkoeTI?si=L7ykXcfSEH6XYOO9
 
 ##### OFFICIAL NEWS CHANNEL
