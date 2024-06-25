@@ -6,4 +6,3 @@ More info on www.doublegram.com
 
 ##### Installation video for android (Work on Windows, Macos, Linux too)
 https://youtu.be/2LR8yLkoeTI?si=L7ykXcfSEH6XYOO9
-
