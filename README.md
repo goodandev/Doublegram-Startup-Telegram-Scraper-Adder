@@ -8,3 +8,5 @@ More info on www.doublegram.com
 
 ##### Installation video for android (Work on Windows, Macos, Linux too)
 https://youtu.be/2LR8yLkoeTI?si=L7ykXcfSEH6XYOO9
+
+Contact @doublegram_official on Telegram for a 20% discount! Valid until 5th July 2024
