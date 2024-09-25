@@ -54,7 +54,3 @@ Doublegram Pro is a licensed product, with regular updates and new features roll
 ## Support
 
 Need assistance? Join our [Telegram Community](https://t.me/doublegram_official) for help and discussions, or check out our [FAQ section](https://www.doublegram.com/faq) for more information.
-
-
-
-
